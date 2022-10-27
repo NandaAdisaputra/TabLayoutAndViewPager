@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ViewPagerAndTabLayout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ini_adalah_fragment_1">Ini adalah Fragment 1</string>
+    <string name="ini_adalah_fragment_2">Ini adalah Fragment 2</string>
+</resources>
