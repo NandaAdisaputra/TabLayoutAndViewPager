@@ -6,12 +6,17 @@
     tools:context=".fragment.FragmentOne">
 
     <TextView
+        android:id="@+id/containerOne"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:textColor="@color/blue"
-        android:textSize="@dimen/_24ssp"
+        android:background="@drawable/bg_button"
         android:textStyle="bold"
+        android:textSize="@dimen/_24ssp"
+        android:textColor="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:padding="@dimen/_8sdp"
         android:text="@string/ini_adalah_fragment_1" />
 
 </FrameLayout>

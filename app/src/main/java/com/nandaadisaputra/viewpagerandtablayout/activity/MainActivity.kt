@@ -1,7 +1,10 @@
 package com.nandaadisaputra.viewpagerandtablayout.activity
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
+import android.opengl.Visibility
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.isVisible
 import com.nandaadisaputra.viewpagerandtablayout.databinding.ActivityMainBinding
 import com.nandaadisaputra.viewpagerandtablayout.fragment.FragmentOne
 import com.nandaadisaputra.viewpagerandtablayout.fragment.FragmentTwo
@@ -18,13 +21,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(view)
         smartTabLayout()
     }
+
     private fun smartTabLayout() {
 
-        val adapter = FragmentPagerItemAdapter(supportFragmentManager, FragmentPagerItems.with(this)
-            .add("Fragment 1", FragmentOne::class.java)
-            .add("Fragment 2", FragmentTwo::class.java)
-            .create())
-
+        val adapter = FragmentPagerItemAdapter(
+            supportFragmentManager, FragmentPagerItems.with(this)
+                .add("Fragment 1", FragmentOne::class.java)
+                .add("Fragment 2", FragmentTwo::class.java)
+                .create()
+        )
         binding.viewPager.adapter = adapter
         binding.viewPager.offscreenPageLimit = 0
         binding.tabLayout.setViewPager(binding.viewPager)

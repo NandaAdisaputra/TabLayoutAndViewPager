@@ -7,6 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="blue">#008EFF</color>
-    <color name="yellow">#FFE500</color>
+
+    <!--TODO 6 Tambahkan warna di bawah ini untuk colors.xml-->
+    <!--warna ini digunakan ketika aplikasi berada dalam light mode-->
+    <color name="textColorButton">#000000</color>
+    <color name="thumbTintMoon">#000000</color>
+    <color name="blackDoffColor">#ffffff</color>
+    <color name="greyColor">#f9f9f9</color>
+    <color name="blueTrack">#206B7E</color>
+    <color name="blue">#2D4DFB</color>
+    <color name="backgroundColorButton">#7488F4</color>
 </resources>
